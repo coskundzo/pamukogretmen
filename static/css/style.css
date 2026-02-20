@@ -1,0 +1,183 @@
+.navbar {
+    background: #085E7D !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+/* Navbar responsive ayarları */
+.navbar-expand-xl {
+    flex-wrap: nowrap !important;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    white-space: nowrap !important;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    font-size: 0.95rem !important;
+}
+
+.navbar-text {
+    margin-left: auto !important;
+    white-space: nowrap !important;
+    font-size: 0.9rem !important;
+    min-width: fit-content !important;
+}
+
+/* Container genişlik optimizasyonu */
+.navbar .container {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.bg-dark {
+    background: #085E7D !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+#map {
+    height: 450px;
+}
+
+/* Video thumbnail overlay styles */
+.position-relative .btn {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.position-relative:hover .btn {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Contact info styling */
+.contact-info p {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-info p:last-child {
+    border-bottom: none;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.1rem;
+    margin-right: 1rem !important;
+}
+
+/* Navbar brand text styling */
+.navbar-brand span {
+    white-space: nowrap;
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+/* Tablet responsive ayarları */
+@media (max-width: 1199px) {
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 0.4rem !important;
+        padding-right: 0.4rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .navbar-text {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Mobile responsive ayarları */
+@media (max-width: 991px) {
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 0.3rem !important;
+        padding-right: 0.3rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    .navbar-text {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Çok küçük ekranlar */
+@media (max-width: 767px) {
+    .navbar-brand span {
+        display: none;
+        /* Çok küçük ekranlarda yazıyı gizle */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8rem !important;
+    }
+
+    .navbar-text {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Logo sizing */
+.navbar-brand img {
+    height: 80px !important;
+    /* Diğer sayfalar için 2 kat (40px -> 80px) */
+    margin: 0;
+    /* Margin kaldırıldı */
+}
+
+/* Ana sayfa için daha büyük logo */
+.home-logo {
+    height: 120px !important;
+    /* Ana sayfa için daha uygun boyut */
+    margin: 0;
+    /* Margin kaldırıldı */
+}
+
+/* Service card equal height */
+.card.h-100 {
+    height: 100% !important;
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 32vh;
+    }
+
+    #map {
+        height: 100%;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Ders Videoları - Pamuk Öğretmen</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="static/img/logo.png" alt="Pamuk Öğretmen">
+                <span>Pamuk Öğretmen</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mobile" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blogs.html" class="nav-link active">Ders Videoları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="navbar-text text-white">
+                    <i class="fa-solid fa-phone"></i> 0532 123 45 67
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-4">
+            <div class="text-center mb-4">
+                <h2>Ders Videoları</h2>
+                <p class="lead">Matematik konularında hazırladığım video dersler ile istediğiniz zaman öğrenin</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <i class="fa-solid fa-play-circle"></i> Tüm Videolar
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-graduation-cap"></i> YKS Hazırlık
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-school"></i> LGS Hazırlık
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-calculator"></i> Lise Matematik
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-book"></i> Ortaokul Matematik
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <nav>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active">Ders Videoları</li>
+                        </ol>
+                    </nav>
+
+                    <!-- Video 1 -->
+                    <div class="card mb-3 shadow">
+                        <div class="row">
+                            <div class="col-4 position-relative">
+                                <img src="static/img/1.jpeg" alt="Türev Konusu" class="img-fluid rounded-start">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <button class="btn btn-primary btn-lg rounded-circle">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-chart-line text-primary"></i> Türev Konusu - Temel
+                                        Kurallar
+                                    </h5>
+                                    <p class="card-text">Türev konusunun temellerini ele aldığımız bu videoda, türev
+                                        alma kuralları ve temel formülleri öğreneceksiniz. 12. sınıf matematik
+                                        müfredatına uygun anlatım.</p>
+                                    <small class="text-muted">
+                                        <i class="fa-solid fa-clock"></i> 45 dakika |
+                                        <i class="fa-solid fa-eye"></i> 1.250 görüntülenme |
+                                        <i class="fa-solid fa-calendar"></i> 15 Eylül 2025
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="card mb-3 shadow">
+                        <div class="row">
+                            <div class="col-4 position-relative">
+                                <img src="static/img/2.jpeg" alt="Trigonometri" class="img-fluid rounded-start">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <button class="btn btn-primary btn-lg rounded-circle">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-compass text-success"></i> Trigonometri - Birim Çember
+                                    </h5>
+                                    <p class="card-text">Trigonometri konusunun en önemli parçası olan birim çember
+                                        anlatımı. Sinüs, kosinüs ve tanjant fonksiyonlarının birim çember üzerinde nasıl
+                                        çalıştığını detaylı bir şekilde açıklıyorum.</p>
+                                    <small class="text-muted">
+                                        <i class="fa-solid fa-clock"></i> 38 dakika |
+                                        <i class="fa-solid fa-eye"></i> 892 görüntülenme |
+                                        <i class="fa-solid fa-calendar"></i> 12 Eylül 2025
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="card mb-3 shadow">
+                        <div class="row">
+                            <div class="col-4 position-relative">
+                                <img src="static/img/3.jpeg" alt="Fonksiyonlar" class="img-fluid rounded-start">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <button class="btn btn-primary btn-lg rounded-circle">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-function text-info"></i> Fonksiyonlar - Grafik Çizimi
+                                    </h5>
+                                    <p class="card-text">Fonksiyonların grafik çizimi konusunu ele aldığımız bu videoda,
+                                        lineer, kuadratik ve üstel fonksiyonların grafiklerini nasıl çizeceğimizi
+                                        öğreneceksiniz.</p>
+                                    <small class="text-muted">
+                                        <i class="fa-solid fa-clock"></i> 52 dakika |
+                                        <i class="fa-solid fa-eye"></i> 1.567 görüntülenme |
+                                        <i class="fa-solid fa-calendar"></i> 10 Eylül 2025
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="card mb-3 shadow">
+                        <div class="row">
+                            <div class="col-4 position-relative">
+                                <img src="static/img/4.jpeg" alt="Analitik Geometri" class="img-fluid rounded-start">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <button class="btn btn-primary btn-lg rounded-circle">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-shapes text-warning"></i> Analitik Geometri - Doğru
+                                        Denklemi
+                                    </h5>
+                                    <p class="card-text">Analitik geometri konusunda doğru denklemlerini nasıl
+                                        bulacağımızı öğreneceksiniz. Eğim-kesim formu, iki nokta arasından geçen doğru
+                                        ve daha fazlası...</p>
+                                    <small class="text-muted">
+                                        <i class="fa-solid fa-clock"></i> 41 dakika |
+                                        <i class="fa-solid fa-eye"></i> 723 görüntülenme |
+                                        <i class="fa-solid fa-calendar"></i> 8 Eylül 2025
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="my-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a href="#" class="page-link">Önceki</a></li>
+                            <li class="page-item active"><a href="" class="page-link">1</a></li>
+                            <li class="page-item"><a href="" class="page-link">2</a></li>
+                            <li class="page-item"><a href="" class="page-link">3</a></li>
+                            <li class="page-item"><a href="" class="page-link">Sonraki</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <span>All Rights Reserved. @2025</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
