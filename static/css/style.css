@@ -1,3 +1,122 @@
+<<<<<<< HEAD
+/* Body Padding for Fixed Navbar */
+body {
+    padding-top: 90px;
+}
+
+/* Modern Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #085E7D 0%, #0a4a5f 100%) !important;
+    padding: 1rem 0 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px;
+    padding: 0 !important;
+    margin-right: 2rem !important;
+    font-weight: 600;
+}
+
+.navbar-logo {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-nav .nav-link i {
+    font-size: 0.9rem;
+}
+
+/* Contact Button */
+.btn-contact {
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: #fff !important;
+    color: #085E7D !important;
+    border-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile Toggle */
+.navbar-toggler {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.2);
+}
+
+/* Container */
+.navbar .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+=======
 .navbar {
     background: #085E7D !important;
     padding-top: 0.5rem !important;
@@ -32,6 +151,7 @@
     max-width: 100% !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+>>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5
 }
 
 .bg-dark {
@@ -96,6 +216,71 @@
     font-size: 1.1rem;
 }
 
+<<<<<<< HEAD
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar {
+        padding: 0.75rem 0 !important;
+    }
+    
+    .navbar .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .navbar-brand {
+        margin-right: 1rem !important;
+    }
+    
+    .navbar-logo {
+        height: 45px;
+    }
+    
+    .brand-name {
+        font-size: 1.2rem;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.75rem;
+    }
+    
+    .navbar-collapse {
+        background: rgba(8, 94, 125, 0.98);
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        margin: 0;
+    }
+    
+    .btn-contact {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 40px;
+    }
+    
+    .brand-name {
+        font-size: 1.1rem;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+=======
 /* Tablet responsive ayarları */
 @media (max-width: 1199px) {
     .navbar-brand span {
@@ -162,6 +347,7 @@
     /* Margin kaldırıldı */
 }
 
+>>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5
 /* Service card equal height */
 .card.h-100 {
     height: 100% !important;

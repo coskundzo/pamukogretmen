@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+# Cloudflare Pages configuration
+name = "pamukhoca"
+compatibility_date = "2024-01-01"
+
+# Pages configuration
+pages_build_output_dir = "."
+
+
+
+# Environment variables (optional)
+# [env.production.vars]
+# RESEND_API_KEY = "your_api_key_here"
+=======
 # Cloudflare Pages configuration
 name = "pamukhoca"
 compatibility_date = "2024-01-01"
@@ -11,3 +25,4 @@ pages_build_output_dir = "."
 # [env.production.vars]
 # RESEND_API_KEY = "your_api_key_here"
 
+>>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5

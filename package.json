@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "pamukhoca-website",
   "version": "1.0.0",
@@ -20,3 +21,27 @@
     "wrangler": "^3.0.0"
   }
 }
+=======
+{
+  "name": "pamukhoca-website",
+  "version": "1.0.0",
+  "description": "Pamuk Öğretmen Matematik Ders Sitesi - Cloudflare Pages üzerinde çalışan statik web sitesi",
+  "scripts": {
+    "dev": "wrangler pages dev . --port 8080",
+    "deploy": "wrangler pages deploy .",
+    "preview": "wrangler pages dev ."
+  },
+  "keywords": [
+    "matematik",
+    "özel ders",
+    "YKS",
+    "LGS",
+    "cloudflare pages"
+  ],
+  "author": "Pamuk Öğretmen",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
+>>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5
