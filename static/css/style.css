@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* Body Padding for Fixed Navbar */
+﻿/* Body Padding for Fixed Navbar */
 body {
     padding-top: 90px;
 }
@@ -115,44 +114,7 @@ body {
 /* Container */
 .navbar .container-fluid {
     padding-left: 2rem;
-    padding-right: 2rem;
-=======
-.navbar {
-    background: #085E7D !important;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-}
-
-/* Navbar responsive ayarları */
-.navbar-expand-xl {
-    flex-wrap: nowrap !important;
-}
-
-.navbar-nav {
-    flex-direction: row !important;
-    white-space: nowrap !important;
-}
-
-.navbar-nav .nav-link {
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-    font-size: 0.95rem !important;
-}
-
-.navbar-text {
-    margin-left: auto !important;
-    white-space: nowrap !important;
-    font-size: 0.9rem !important;
-    min-width: fit-content !important;
-}
-
-/* Container genişlik optimizasyonu */
-.navbar .container {
-    max-width: 100% !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
->>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5
-}
+    padding-right: 2rem;}
 
 .bg-dark {
     background: #085E7D !important;
@@ -216,7 +178,6 @@ body {
     font-size: 1.1rem;
 }
 
-<<<<<<< HEAD
 /* Responsive Design */
 @media (max-width: 991px) {
     .navbar {
@@ -279,75 +240,6 @@ body {
         font-size: 0.7rem;
     }
 }
-
-=======
-/* Tablet responsive ayarları */
-@media (max-width: 1199px) {
-    .navbar-brand span {
-        font-size: 1rem;
-    }
-
-    .navbar-nav .nav-link {
-        padding-left: 0.4rem !important;
-        padding-right: 0.4rem !important;
-        font-size: 0.9rem !important;
-    }
-
-    .navbar-text {
-        font-size: 0.85rem !important;
-    }
-}
-
-/* Mobile responsive ayarları */
-@media (max-width: 991px) {
-    .navbar-brand span {
-        font-size: 0.9rem;
-    }
-
-    .navbar-nav .nav-link {
-        padding-left: 0.3rem !important;
-        padding-right: 0.3rem !important;
-        font-size: 0.85rem !important;
-    }
-
-    .navbar-text {
-        font-size: 0.8rem !important;
-    }
-}
-
-/* Çok küçük ekranlar */
-@media (max-width: 767px) {
-    .navbar-brand span {
-        display: none;
-        /* Çok küçük ekranlarda yazıyı gizle */
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 0.8rem !important;
-    }
-
-    .navbar-text {
-        font-size: 0.75rem !important;
-    }
-}
-
-/* Logo sizing */
-.navbar-brand img {
-    height: 80px !important;
-    /* Diğer sayfalar için 2 kat (40px -> 80px) */
-    margin: 0;
-    /* Margin kaldırıldı */
-}
-
-/* Ana sayfa için daha büyük logo */
-.home-logo {
-    height: 120px !important;
-    /* Ana sayfa için daha uygun boyut */
-    margin: 0;
-    /* Margin kaldırıldı */
-}
-
->>>>>>> 9074412f6014a9f983e8efbcd8e826ff1c91c1d5
 /* Service card equal height */
 .card.h-100 {
     height: 100% !important;
