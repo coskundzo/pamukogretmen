@@ -202,12 +202,14 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyswxY90OdLzPSllGpHCE69GXF37hbV2_HQJXU9r1wJG_w6VVk3wUXcLacspUFA9Ng/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwI0fZszfw4oQdK_FKWzi56jLKJcCEvPv-SbLKOTIoOfwpWqqZKAWKdzH3otRnWm2Y/exec';
         const form = document.getElementById('contactForm');
         const messageContainer = document.getElementById('messageContainer');
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
+            
+            console.log('Form gönderiliyor...');
             
             // Butonu devre dışı bırak ve loading göster
             const submitBtn = form.querySelector('button[type="submit"]');
@@ -219,7 +221,12 @@
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
             
+            console.log('Form verileri:', data);
+            console.log('JSON:', JSON.stringify(data));
+            
             try {
+                console.log('Fetch başlatılıyor...');
+                
                 const response = await fetch(scriptURL, {
                     redirect: "follow",
                     method: 'POST',
@@ -229,7 +236,15 @@
                     }
                 });
                 
-                const result = await response.json();
+                console.log('Response alındı:', response);
+                console.log('Response status:', response.status);
+                console.log('Response ok:', response.ok);
+                
+                const responseText = await response.text();
+                console.log('Response text:', responseText);
+                
+                const result = JSON.parse(responseText);
+                console.log('Parsed result:', result);
                 
                 if (result.result === 'success') {
                     messageContainer.innerHTML = `
@@ -247,10 +262,16 @@
                 }
                 messageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             } catch (error) {
-                console.error('Hata:', error);
+                console.error('HATA DETAYI:');
+                console.error('Error:', error);
+                console.error('Error message:', error.message);
+                console.error('Error stack:', error.stack);
+                
                 messageContainer.innerHTML = `
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <i class="fa-solid fa-exclamation-triangle"></i> Bağlantı hatası. Lütfen tekrar deneyin veya telefon ile iletişime geçin.
+                        <i class="fa-solid fa-exclamation-triangle"></i> 
+                        <strong>Bağlantı hatası:</strong> ${error.message}<br>
+                        <small>Lütfen konsolu kontrol edin (F12) veya telefon ile iletişime geçin.</small>
                         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                     </div>`;
                 messageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -258,6 +279,7 @@
                 // Butonu tekrar aktif et
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;
+                console.log('Form işlemi tamamlandı.');
             }
         });
     </script>
